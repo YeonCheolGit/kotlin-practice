@@ -1,4 +1,3 @@
 # kotlin-spring-practice
 
-"Hello World" practice with Kotlin and Spring Boot.  
-Single Controller and test.
+코틀린을 활용한 다양한 연습을 합니다.
