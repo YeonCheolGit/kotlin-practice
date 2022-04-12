@@ -10,7 +10,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.content
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
 @WebMvcTest(HelloController::class)
-class ControllerTests(@Autowired val mockMvc: MockMvc) {
+class ControllerUnitTest(@Autowired val mockMvc: MockMvc) {
 
     @Test
     fun Should_Be_Get_Hello_World() {
