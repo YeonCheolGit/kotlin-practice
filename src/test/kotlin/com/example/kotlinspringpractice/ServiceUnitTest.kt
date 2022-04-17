@@ -32,4 +32,45 @@ class ServiceUnitTest {
         // then
         assertEquals(expectedSize, actualArray.size)
     }
+
+    @Test
+    @DisplayName("String의 2번째 index를 출력합니다")
+    fun should_return_second_index_from_string() {
+        // given
+        val expected = "study"
+
+        // when
+        val secondExpected = expected[2].toString()
+
+        // then
+        assertEquals(secondExpected, "u");
+    }
+
+    @Test
+    @DisplayName("mutable list에 값을 더하면, 성공합니다.")
+    fun should_mutable_collection_is_added() {
+        // given
+        val mutableList = mutableListOf(1, 2, 3)
+
+        // when
+        mutableList.add(4)
+
+        // then
+        assertEquals(mutableList[3], 4)
+    }
+
+    @Test
+    @DisplayName("for loop을 이용해서 1 ~ 5를 list에 추가한다면, 성공합니다.")
+    fun should_iterate_five_times_and_add_elements() {
+        // given
+        val mutableList = mutableListOf<Int>()
+
+        // when
+        for (i in 1..5) {
+            mutableList.add(i)
+        }
+
+        // then
+        assertEquals(mutableList[4], 5)
+    }
 }
