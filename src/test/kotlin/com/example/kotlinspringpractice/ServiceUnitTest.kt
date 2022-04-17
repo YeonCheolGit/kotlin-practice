@@ -1,13 +1,9 @@
 package com.example.kotlinspringpractice
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNotEquals
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.assertThrows
-import org.junit.jupiter.api.fail
-import org.mockito.Mock
-import org.mockito.Mockito
-import kotlin.math.exp
 
 class ServiceUnitTest {
 
